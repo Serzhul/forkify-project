@@ -10,7 +10,6 @@
   "author": "Daewon Seo",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.0.0-nightly.554",
     "sass": "^1.35.2"
   },
   "dependencies": {
