@@ -5,6 +5,7 @@ class PreviewView extends View {
   _parentElement = '';
 
   _generateMarkup() {
+    console.log(this._data.image);
     const id = window.location.hash.slice(1);
 
     return `
@@ -13,7 +14,7 @@ class PreviewView extends View {
       this._data.id === id ? 'preview__link--active' : ''
     }" href="#${this._data.id}">
       <figure class="preview__fig">
-        <img src="${this._data.image}" alt="${this._data.title}" />
+        <img src="${this._data.image}" alt="${this._data.title}" crossorigin/>
       </figure>
       <div class="preview__data">
         <h4 class="preview__title">${this._data.title}</h4>
