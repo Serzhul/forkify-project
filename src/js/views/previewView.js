@@ -5,7 +5,6 @@ class PreviewView extends View {
   _parentElement = '';
 
   _generateMarkup() {
-    console.log(this._data.image);
     const id = window.location.hash.slice(1);
 
     return `
